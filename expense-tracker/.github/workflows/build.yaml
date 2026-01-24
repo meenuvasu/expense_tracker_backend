@@ -34,3 +34,4 @@ jobs:
             -Dsonar.java.binaries=expense-tracker/target/classes
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=meenuvasu_expense_tracker_backend
