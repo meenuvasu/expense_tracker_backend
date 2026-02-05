@@ -1,9 +1,3 @@
-// ExpenseController handles all REST API requests related to expense management.
-// It provides endpoints to create, read, update, and delete expense records.
-// This controller acts as a bridge between the frontend (React) and backend services.
-// All HTTP requests from the frontend are mapped here and processed using the service layer.
-
-
 package com.expensetracker.expense_tracker.controller;
 
 import com.expensetracker.expense_tracker.model.Expense;
@@ -14,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/expenses")
-@CrossOrigin(origins = "expense-tracker-meenakshi.vercel.app")
+@CrossOrigin(origins = "*")
 public class ExpenseController {
 
     private final ExpenseRepository repo;
